@@ -1,0 +1,13 @@
+print("Lengkapi Data Mahasiswa")
+nama = input("Masukan nama kamu: ") 
+alamat = input("Masukan alamat kamu: ")
+e_mail = input("Masukan email kamu: ")
+telepon = input("Masukan nomor telepon kamu: ")
+
+print("----------------")
+print("Data Mahasiswa")
+print("----------------")
+print(f"Nama: {nama}")
+print(f"Alamat:\n{alamat}")
+print(f"Email: {e_mail}")
+print(f"Telepon: {telepon}")
