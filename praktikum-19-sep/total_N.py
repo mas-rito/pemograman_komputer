@@ -11,3 +11,4 @@ rata_rata = total / N
 
 print(f"Total penjumlahan: {total}")
 print(f"Rata-rata: {rata_rata}")
+ 
