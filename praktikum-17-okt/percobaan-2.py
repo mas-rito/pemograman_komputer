@@ -4,17 +4,22 @@ def generate_random_number(bawah, atas):
     return random.randint(bawah, atas)
 
 def guess_number(number):
+    jumlah_tebakan = 0
     while True:
         print('=======================')
         guess = int(input("Masukan angka tebakan mu: "))
 
         if guess == number:
             print("Selamat, kamu benar!")
+            jumlah_tebakan += 1
+            print(f"Jumlah tebakanmu: {jumlah_tebakan}")
             break
         elif guess < number:
             print("Terlalu kecil, coba lagi")
+            jumlah_tebakan += 1
         else:
             print("Terlalu besar, coba lagi")
+            jumlah_tebakan += 1
 
 batas_atas = int(input("Masukan angka batas atas: "))
 batas_bawah = int(input("Masukan angka batas bawah: "))
