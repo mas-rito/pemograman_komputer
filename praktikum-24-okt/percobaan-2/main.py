@@ -20,5 +20,9 @@ elif operator == 'x':
     print(f"{angka1} x {angka2} = {aritmatika.perkalian(angka1, angka2)}")
 elif operator == '/':
     print(f"{angka1} / {angka2} = {aritmatika.pembagian(angka1, angka2)}")
+elif operator == '%':
+    print(f"{angka1} % {angka2} = {aritmatika.modulo(angka1, angka2)}")
+elif operator == '^':
+    print(f"{angka1} ^ {angka2} = {aritmatika.pangkat(angka1, angka2)}")
 else:
     print("Operasi tidak valid")
