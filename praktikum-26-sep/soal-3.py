@@ -22,36 +22,41 @@ list_nilai = []
 i =1
 while True:
     print("Masukkan nilai mahasiswa atau 999 untuk melihat hasil: ")
-    nilai = int(input(f"Masukkan kategori nilai mahasiswa: "))
+    nilai = int(input(f"Masukkan nilai mahasiswa: "))
 
     if nilai == 999:
         break
 
     if nilai >= 85:
-        data = {"Mahasiswa ke-":i,"Nilai": nilai, "Kategori": "A"}
+        data = {"Mahasiswa":i,"Nilai": nilai, "Kategori": "A"}
         list_nilai.append(data)
         jumlah_lulus += 1
     elif nilai >= 70:
-        data = {"Mahasiswa ke-":i,"Nilai": nilai, "Kategori": "B"}
+        data = {"Mahasiswa":i,"Nilai": nilai, "Kategori": "B"}
         list_nilai.append(data)
         jumlah_lulus += 1
     elif nilai >= 60:
-        data = {"Mahasiswa ke-":i,"Nilai": nilai, "Kategori": "C"}
+        data = {"Mahasiswa":i,"Nilai": nilai, "Kategori": "C"}
         list_nilai.append(data)
         jumlah_lulus += 1
     elif nilai < 60:
-        data = {"Mahasiswa ke-":i,"Nilai": nilai, "Kategori": "D"}
+        data = {"Mahasiswa":i,"Nilai": nilai, "Kategori": "D"}
         list_nilai.append(data)
         jumlah_tidak_lulus += 1
     else:
-        data = {"Mahasiswa ke-":i,"Nilai": nilai, "Kategori": "E"}
+        data = {"Mahasiswa":i,"Nilai": nilai, "Kategori": "E"}
         list_nilai.append(data)
         jumlah_tidak_lulus += 1
     i += 1
     
 
+print('------------------')
+print('HASIL PERHITUNGAN')
+print('------------------')
 
 for data in list_nilai:
-    print(data)
+    for key, value in data.items():
+        print(f'{key}: {value}')
+    print()
 
 print(f'Jumlah mahasiswa yang lulus: {jumlah_lulus} dan yang tidak lulus: {jumlah_tidak_lulus} dari {jumlah_lulus + jumlah_tidak_lulus} mahasiswa')
