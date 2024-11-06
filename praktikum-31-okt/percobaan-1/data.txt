@@ -1,0 +1,4 @@
+Hallo word!Nama = Ramadhan
+NIM = 123
+Prodi = Sistem Informasi
+

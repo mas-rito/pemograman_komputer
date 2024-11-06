@@ -1,0 +1,24 @@
+Nama = Rito
+NIM = 1234
+Prodi = Sistem Informasi
+
+Nama = Marcello
+NIM = 12345
+Prodi = Teknik Pangan
+
+Nama = Kania
+NIM = 2343
+Prodi = Pendidikan
+
+Nama = Billa
+NIM = 9456
+Prodi = Kedokteran
+
+Nama = Adella
+NIM = 1232
+Prodi = Sistem Informasi
+
+Nama = ads
+NIM = 123
+Prodi = 3asd
+

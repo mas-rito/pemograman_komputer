@@ -8,7 +8,6 @@ def main():
     data = []
     
     while True:
-        # print("\nData saat ini:", CRUD.read(data))
         print("\nMenu:")
         print("1. Tambah item (Create)")
         print("2. Lihat data (Read)")
